@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/select2/style.css">
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+<body>
+    <div class="home">
+        <video src="./assets/images/homeVideo.mp4" autoplay muted playsinline loop></video>
+        <nav>
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">
+                    <img class="logoDark" src="./assets/images/logo-dark.svg" alt="">
+                    <img class="logoWhite" src="./assets/images/logo-white.svg" alt="">
+                </a>
+                <div class="navbar-right">
+                    <form class="nav-search">
+                        <button class="searchBtn" type="submit">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 17.4167C11.3548 17.4167 13.4532 16.5475 15.0004 15.0003C16.5476 13.4531 17.4167 11.3547 17.4167 9.16667C17.4167 6.97863 16.5476 4.88021 15.0004 3.33303C13.4532 1.78586 11.3548 0.916664 9.16675 0.916664C6.97871 0.916664 4.88029 1.78586 3.33312 3.33303C1.78594 4.88021 0.916748 6.97863 0.916748 9.16667C0.916748 11.3547 1.78594 13.4531 3.33312 15.0003C4.88029 16.5475 6.97871 17.4167 9.16675 17.4167ZM9.16675 15.4752C8.3383 15.4752 7.51797 15.312 6.75259 14.995C5.98721 14.6779 5.29176 14.2132 4.70596 13.6274C4.12017 13.0416 3.65549 12.3462 3.33845 11.5808C3.02142 10.8154 2.85825 9.99511 2.85825 9.16667C2.85825 8.33822 3.02142 7.51789 3.33845 6.75251C3.65549 5.98712 4.12017 5.29168 4.70596 4.70588C5.29176 4.12008 5.98721 3.6554 6.75259 3.33837C7.51797 3.02134 8.3383 2.85816 9.16675 2.85816C10.8399 2.85816 12.4445 3.52281 13.6275 4.70588C14.8106 5.88895 15.4752 7.49355 15.4752 9.16667C15.4752 10.8398 14.8106 12.4444 13.6275 13.6274C12.4445 14.8105 10.8399 15.4752 9.16675 15.4752ZM14.5714 17.4167L16.7952 21.0833H18.9402L16.7155 17.4167H14.5714Z" fill="#1E1E1E"/>
+                                </svg>
+
+                        </button>
+                        <input type="text" placeholder="AVATR,XPENG,SKODA....">
+                    </form>
+                    <a href="" class="whatsapp">
+                        <img src="./assets/icons/whatsapp-white.svg" alt="">
+                        <p>Whatsapp</p>
+                    </a>
+                    <button class="test_drive" type="button">
+                        <img src="./assets/icons/test_drive.svg" alt="">
+                        <p>Test drive</p>
+                    </button>
+                    <div class="lang">
+                        <button class="current-lang" type="button">
+                            <span>AZ</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10L12 15L17 10H7Z" fill="#414141"/>
+                            </svg>
+                        </button>
+                        <div class="other-langs">
+                            <a href="" class="lang-item">EN</a>
+                            <a href="" class="lang-item">RU</a>
+                        </div>
+                    </div>
+                    <button class="themeModeBtn" type="button">
+                        <img src="./assets/icons/moon.svg" alt="" class="moon">
+                        <img src="./assets/icons/moon-white.svg" alt="" class="moon-white">
+                        <img src="./assets/icons/sun.svg" alt="" class="sun">
+                    </button>
+                    <a href="" class="nav-phone">*10101</a>
+                    <button class="hamburger" type="button">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 6.5H20M5 12H20M5 17.5H20" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="home-hero">
+            <h1>Find your dream car</h1>
+            <form action="">
+                <div class="form-items">
+                    <div class="form-item">
+                        <select name="" id="" class="nice-select">
+                            <option value="">Marka</option>
+                            <option value="">Mercedes</option>
+                            <option value="">Changan</option>
+                            <option value="">Avatr</option>
+                            <option value="">Xpeng</option>
+                        </select>
+                    </div>
+                    <div class="line"></div>
+                    <div class="form-item">
+                        <select name="" id="" class="nice-select">
+                            <option value="">Model</option>
+                            <option value="">C300</option>
+                            <option value="">Uni-V</option>
+                            <option value="">G800</option>
+                            <option value="">Qiyuyan A07</option>
+                        </select>
+                    </div>
+                    <div class="line"></div>
+                    <div class="form-item">
+                        <select name="" id="" class="nice-select">
+                            <option value="">Yanacaq növü</option>
+                            <option value="">Benzin</option>
+                            <option value="">Hibrid</option>
+                            <option value="">Plugin-hibrid</option>
+                            <option value="">Elektrik</option>
+                        </select>
+                    </div>
+                    <div class="line"></div>
+                    <div class="form-item">
+                        <select name="" id="" class="nice-select">
+                            <option value="">Status</option>
+                            <option value="">Yeni</option>
+                            <option value="">Sürülmüş</option>
+                        </select>
+                    </div>
+                    <div class="line"></div>
+                    <div class="form-item">
+                        <select name="" id="" class="nice-select">
+                            <option value="">Qiymət</option>
+                            <option value="">20000-30000</option>
+                            <option value="">40000-60000</option>
+                            <option value="">50000-70000</option>
+                            <option value="">90000-110000</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="homeSearchBtn" type="submit">
+                    Axtar
+                </button>
+            </form>
+            <div class="home-brands">
+                <a href="brands.html" class="home-brand-item">
+                    <div class="brand-img">
+                        <img src="./assets/images/skoda.svg" alt="">
+                    </div>
+                    <p>SKODA</p>
+                </a>
+                <a href="brands.html" class="home-brand-item">
+                    <div class="brand-img">
+                        <img src="./assets/images/leapmotor.svg" alt="">
+                    </div>
+                    <p>LEAPMOTOR</p>
+                </a>
+                <a href="brands.html" class="home-brand-item">
+                    <div class="brand-img">
+                        <img src="./assets/images/changan.svg" alt="">
+                    </div>
+                    <p>Changan</p>
+                </a>
+                <a href="brands.html" class="home-brand-item">
+                    <div class="brand-img">
+                        <img src="./assets/images/mercedes.svg" alt="">
+                    </div>
+                    <p>Mercedes-Benz</p>
+                </a>
+                <a href="brands.html" class="home-brand-item">
+                    <div class="brand-img">
+                        <img src="./assets/images/avatr.svg" alt="">
+                    </div>
+                    <p>Avatr</p>
+                </a>
+                <a href="brands.html" class="home-brand-item">
+                    <div class="brand-img">
+                        <img src="./assets/images/lynkco.svg" alt="">
+                    </div>
+                    <p>LYNK & CO</p>
+                </a>
+                <a href="brands.html" class="home-brand-item">
+                    <div class="brand-img">
+                        <img src="./assets/images/xpeng.svg" alt="">
+                    </div>
+                    <p>Xpeng</p>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="reserved">
+                    <p>All Rights Reserved © 2024</p>
+                    <a href="">166Tech</a>
+                </div>
+                <div class="footer-right">
+                    <div class="socials">
+                        <a href="" class="social-item">
+                            <img src="./assets/icons/facebook-white.svg" alt="">
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./assets/icons/insta-white.svg" alt="">
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./assets/icons/whatsapp-white.svg" alt="">
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./assets/icons/linkedin-white.svg" alt="">
+                        </a>
+                        <a href="" class="social-item">
+                            <img src="./assets/icons/twitter-white.svg" alt="">
+                        </a>
+                    </div>
+                    <a href="" class="footer-phone">
+                        *10101
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="test_drive_modal">
+        <div class="test_drive">
+            <div class="test_drive_head">
+                <a href="index.html" class="test_drive_logo">
+                    <img class="logoDark" src="./assets/images/logo-dark.svg" alt="">
+                    <img class="logoWhite" src="./assets/images/logo-white.svg" alt="">
+                </a>
+                <button class="close_testDrive" type="button">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.5 20L4.5 4M20.5 4L4.5 20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <h2>Test sürüşü</h2>
+            <div class="short-desc">
+                <p>Zəhmət olmasa, əlaqə formasını doldurun ki, menecerlərimiz sualınızla bağlı sizə kömək edə bilsinlər. Tezliklə sizinlə əlaqə saxlayacağıq. Sorğunuz üçün təşəkkür edirik!</p>
+            </div>
+            <form action="">
+                <div class="form-items">
+                    <div class="form-item">
+                        <label for="">Ad</label>
+                        <input type="text" placeholder="Ad">
+                    </div>
+                    <div class="form-item">
+                        <label for="">Soyad</label>
+                        <input type="text" placeholder="Soyad">
+                    </div>
+                </div>
+                <div class="form-items">
+                    <div class="form-item">
+                        <label for="">Marka</label>
+                        <select name="" id="" class="nice-select">
+                            <option value="">Marka</option>
+                            <option value="">Mercedes</option>
+                            <option value="">Xpeng</option>
+                            <option value="">Changan</option>
+                            <option value="">Avatr</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="">Model</label>
+                        <select name="" id="" class="nice-select">
+                            <option value="">Model</option>
+                            <option value="">C300</option>
+                            <option value="">Nevo A05</option>
+                            <option value="">Cs 35</option>
+                            <option value="">G 500</option>
+                            <option value="">Avatr</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="">Əlaqə nömrəsi</label>
+                    <input type="text" placeholder="Əlaqə nömrəsi">
+                </div>
+                <button class="submitTestDrive" type="submit">Göndər</button>
+            </form>
+        </div>
+    </div>
+    <div class="mobile_menu_container">
+        <div class="mobile_menu">
+            <div class="mobile_menu_head">
+                <a href="index.html" class="mobile_menu_logo">
+                    <img class="logoDark" src="./assets/images/logo-dark.svg" alt="">
+                    <img class="logoWhite" src="./assets/images/logo-white.svg" alt="">
+                </a>
+                <button class="close_mobile_menu" type="button">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.5 20L4.5 4M20.5 4L4.5 20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <form class="mobile-search">
+                <button class="searchBtn" type="submit">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 17.4167C11.3548 17.4167 13.4532 16.5475 15.0004 15.0003C16.5476 13.4531 17.4167 11.3547 17.4167 9.16667C17.4167 6.97863 16.5476 4.88021 15.0004 3.33303C13.4532 1.78586 11.3548 0.916664 9.16675 0.916664C6.97871 0.916664 4.88029 1.78586 3.33312 3.33303C1.78594 4.88021 0.916748 6.97863 0.916748 9.16667C0.916748 11.3547 1.78594 13.4531 3.33312 15.0003C4.88029 16.5475 6.97871 17.4167 9.16675 17.4167ZM9.16675 15.4752C8.3383 15.4752 7.51797 15.312 6.75259 14.995C5.98721 14.6779 5.29176 14.2132 4.70596 13.6274C4.12017 13.0416 3.65549 12.3462 3.33845 11.5808C3.02142 10.8154 2.85825 9.99511 2.85825 9.16667C2.85825 8.33822 3.02142 7.51789 3.33845 6.75251C3.65549 5.98712 4.12017 5.29168 4.70596 4.70588C5.29176 4.12008 5.98721 3.6554 6.75259 3.33837C7.51797 3.02134 8.3383 2.85816 9.16675 2.85816C10.8399 2.85816 12.4445 3.52281 13.6275 4.70588C14.8106 5.88895 15.4752 7.49355 15.4752 9.16667C15.4752 10.8398 14.8106 12.4444 13.6275 13.6274C12.4445 14.8105 10.8399 15.4752 9.16675 15.4752ZM14.5714 17.4167L16.7952 21.0833H18.9402L16.7155 17.4167H14.5714Z" fill="#1E1E1E"/>
+                        </svg>
+
+                </button>
+                <input type="text" placeholder="AVATR,XPENG,SKODA....">
+            </form>
+            <div class="mobile_menu_bottom">
+                <div class="lang">
+                    <button class="current-lang" type="button">
+                        <span>AZ</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="#414141"/>
+                        </svg>
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="lang-item">EN</a>
+                        <a href="" class="lang-item">RU</a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <button class="themeModeBtn" type="button">
+                    <img src="./assets/icons/moon.svg" alt="" class="moon">
+                    <img src="./assets/icons/moon-white.svg" alt="" class="moon-white">
+                    <img src="./assets/icons/sun.svg" alt="" class="sun">
+                </button>
+                <div class="line"></div>
+                <a href="" class="mobile-phone">*10101</a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/select2/select.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select.nice-select').niceSelect();
+            $('select.select2').select2();
+        });
+    </script>
+    <script src="./assets/swiper/swiper.js"></script>
+   <script src="./assets/index.js"></script>
+</body>
+</html>

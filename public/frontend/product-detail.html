@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/jquery-nice-select-1.1.0/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/select2/style.css">
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img class="logoDark" src="./assets/images/logo-dark.svg" alt="">
+                <img class="logoWhite" src="./assets/images/logo-white.svg" alt="">
+            </a>
+            <div class="navbar-right">
+                <form class="nav-search">
+                    <button class="searchBtn" type="submit">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 17.4167C11.3548 17.4167 13.4532 16.5475 15.0004 15.0003C16.5476 13.4531 17.4167 11.3547 17.4167 9.16667C17.4167 6.97863 16.5476 4.88021 15.0004 3.33303C13.4532 1.78586 11.3548 0.916664 9.16675 0.916664C6.97871 0.916664 4.88029 1.78586 3.33312 3.33303C1.78594 4.88021 0.916748 6.97863 0.916748 9.16667C0.916748 11.3547 1.78594 13.4531 3.33312 15.0003C4.88029 16.5475 6.97871 17.4167 9.16675 17.4167ZM9.16675 15.4752C8.3383 15.4752 7.51797 15.312 6.75259 14.995C5.98721 14.6779 5.29176 14.2132 4.70596 13.6274C4.12017 13.0416 3.65549 12.3462 3.33845 11.5808C3.02142 10.8154 2.85825 9.99511 2.85825 9.16667C2.85825 8.33822 3.02142 7.51789 3.33845 6.75251C3.65549 5.98712 4.12017 5.29168 4.70596 4.70588C5.29176 4.12008 5.98721 3.6554 6.75259 3.33837C7.51797 3.02134 8.3383 2.85816 9.16675 2.85816C10.8399 2.85816 12.4445 3.52281 13.6275 4.70588C14.8106 5.88895 15.4752 7.49355 15.4752 9.16667C15.4752 10.8398 14.8106 12.4444 13.6275 13.6274C12.4445 14.8105 10.8399 15.4752 9.16675 15.4752ZM14.5714 17.4167L16.7952 21.0833H18.9402L16.7155 17.4167H14.5714Z" fill="#1E1E1E"/>
+                            </svg>
+                            
+                    </button>
+                    <input type="text" placeholder="AVATR,XPENG,SKODA....">
+                </form>
+                <a href="" class="whatsapp">
+                    <img src="./assets/icons/whatsapp-white.svg" alt="">
+                    <p>Whatsapp</p>
+                </a>
+                <button class="test_drive" type="button">
+                    <img src="./assets/icons/test_drive.svg" alt="">
+                    <p>Test drive</p>
+                </button>
+                <div class="lang">
+                    <button class="current-lang" type="button">
+                        <span>AZ</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="#414141"/>
+                        </svg>
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="lang-item">EN</a>
+                        <a href="" class="lang-item">RU</a>
+                    </div>
+                </div>
+                <button class="themeModeBtn" type="button">
+                    <img src="./assets/icons/moon.svg" alt="" class="moon">
+                    <img src="./assets/icons/moon-white.svg" alt="" class="moon-white">
+                    <img src="./assets/icons/sun.svg" alt="" class="sun">
+                </button>
+                <a href="" class="nav-phone">*10101</a>
+                <button class="hamburger" type="button">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 6.5H20M5 12H20M5 17.5H20" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                        
+                </button>
+
+            </div>
+        </div>
+    </nav>
+    <div class="model-detail-head">
+        <div class="brand-logo">
+            <img src="./assets/images/avatr.svg" alt="">
+        </div>
+        <h1 class="brand_name">AVATR</h1>
+        <h2 class="model_name">AVATR 07</h2>
+        <button class="shareBtn" type="button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.3363 3.221L3.87334 8.71C3.80594 8.73241 3.74695 8.77481 3.70421 8.83155C3.66147 8.8883 3.63702 8.9567 3.63409 9.02768C3.63116 9.09865 3.64989 9.16884 3.68781 9.22891C3.72572 9.28899 3.78101 9.3361 3.84634 9.364L9.89634 11.957C9.92805 11.9707 9.96276 11.976 9.99711 11.9723C10.0315 11.9686 10.0643 11.9561 10.0923 11.936L16.0233 7.698C16.2073 7.568 16.4333 7.794 16.3033 7.978L12.0653 13.909C12.0456 13.9371 12.0333 13.9697 12.0298 14.0039C12.0263 14.038 12.0317 14.0725 12.0453 14.104L14.6373 20.154C14.6651 20.2194 14.7122 20.2747 14.7722 20.3127C14.8322 20.3507 14.9023 20.3695 14.9733 20.3667C15.0443 20.3639 15.1127 20.3395 15.1695 20.2969C15.2263 20.2543 15.2688 20.1954 15.2913 20.128L20.7803 3.664C20.801 3.60229 20.804 3.53604 20.7891 3.4727C20.7742 3.40936 20.7419 3.35142 20.6959 3.30541C20.6499 3.25939 20.592 3.22712 20.5286 3.21221C20.4653 3.1973 20.3981 3.20034 20.3363 3.221Z" fill="#1E1E1E"/>
+            </svg>  
+            <p>Paylaş</p>              
+        </button>
+        <div class="shared_box">
+            <a href="" class="shared-item">
+                <img src="./assets/icons/facebook-black.svg" alt="">
+            </a>
+            <a href="" class="shared-item">
+                <img src="./assets/icons/insta-black.svg" alt="">
+            </a>
+            <a href="" class="shared-item">
+                <img src="./assets/icons/whatsapp-black.svg" alt="">
+            </a>
+            <a href="" class="shared-item">
+                <img src="./assets/icons/linkedin-black.svg" alt="">
+            </a>
+            <a href="" class="shared-item">
+                <img src="./assets/icons/twitter-black.svg" alt="">
+            </a>
+            <button class="copy_btn" type="button">
+                <i class="bi bi-share"></i>
+            </button>
+            <button class="close_shared_box" type="button">
+                <i class="bi bi-x-circle"></i>
+            </button>
+        </div>
+    </div>
+    <div class="product-detail-main">
+        <div class="product-images">
+            <div class="product-gallery-slide swiper">
+                <div class="swiper-wrapper">
+                    <div class="gallery-item swiper-slide">
+                        <img src="./assets/images/product-detail-1.png" alt="">
+                    </div>
+                    <div class="gallery-item swiper-slide">
+                        <img src="./assets/images/product-detail-2.png" alt="">
+                    </div>
+                    <div class="gallery-item swiper-slide">
+                        <img src="./assets/images/product-detail-3.png" alt="">
+                    </div>
+                    <div class="gallery-item swiper-slide">
+                        <img src="./assets/images/product-detail-4.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-buttons">
+                    <div class="swiper-button-prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5361 2.58955L6.84454 11.2967C6.76631 11.3715 6.70422 11.4615 6.66212 11.5612C6.62002 11.6609 6.59879 11.7681 6.59974 11.8763C6.59926 11.987 6.62064 12.0966 6.66265 12.199C6.70466 12.3013 6.76647 12.3944 6.84454 12.4727C9.98854 15.5399 13.0185 18.5003 15.9345 21.3539C16.0845 21.4943 16.6845 21.8435 17.1477 21.3251C17.6109 20.8055 17.3301 20.3531 17.1477 20.1659L8.66614 11.8763L16.7625 3.76555C17.0577 3.35835 17.0337 2.98275 16.6905 2.63875C16.3465 2.29475 15.9617 2.27755 15.5361 2.58955Z" fill="white"/>
+                        </svg>                        
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.46386 2.58955L17.1555 11.2967C17.2337 11.3715 17.2958 11.4615 17.3379 11.5612C17.38 11.6609 17.4012 11.7681 17.4003 11.8763C17.4007 11.987 17.3794 12.0966 17.3374 12.199C17.2953 12.3013 17.2335 12.3944 17.1555 12.4727C14.0115 15.5399 10.9815 18.5003 8.06546 21.3539C7.91546 21.4943 7.31546 21.8435 6.85226 21.3251C6.38906 20.8055 6.66986 20.3531 6.85226 20.1659L15.3339 11.8763L7.23746 3.76555C6.94226 3.35835 6.96626 2.98275 7.30946 2.63875C7.65346 2.29475 8.03826 2.27755 8.46386 2.58955Z" fill="white"/>
+                        </svg>                        
+                    </div>
+                </div>
+            </div>
+            <p class="campaign-tag">Kampaniya</p>
+        </div>
+
+        <div class="product-detail-right">
+            <div class="product-detail">
+                <div class="detail-tags">
+                    <div class="tag-item">
+                        <img src="./assets/icons/eletrik-car.svg" alt="">
+                        Elektrikli
+                    </div>
+                    <div class="tag-item">
+                        2025
+                    </div>
+                    <div class="tag-item">
+                        Çin
+                    </div>
+                </div>
+                <div class="detail-items">
+                    <div class="detail-item">
+                        <div class="detail-item-title">
+                            <img src="./assets/icons/money_strong.svg" alt="">
+                            <span style="color: #E4712E;">Qiymət</span>
+                        </div>
+                        <p>24 500 AZN</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item-title">
+                            <img src="./assets/icons/speed.svg" alt="">
+                            <span style="color: #AB89D8;">Sürətlənmə</span>
+                        </div>
+                        <p>500 km/h</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item-title">
+                            <img src="./assets/icons/horsepower.svg" alt="">
+                            <span style="color: #109DE3;">At gücü</span>
+                        </div>
+                        <p>120 HP</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item-title">
+                            <img src="./assets/icons/battery.svg" alt="">
+                            <span style="color: #BFD856;">Battery</span>
+                        </div>
+                        <p>74 kWh</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item-title">
+                            <img src="./assets/icons/range.svg" alt="">
+                            <span style="color: #D64A4A;">Maksimal yürüş</span>
+                        </div>
+                        <p>20000 km</p>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-item-title">
+                            <img src="./assets/icons/charge.svg" alt="">
+                            <span style="color: #248F59;">Charge</span>
+                        </div>
+                        <p>%20 - %80 , 30 min</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-calculator">
+                <h2 class="product-calculator-title">Hissəli alış kalkulyatoru</h2>
+                <div class="product-calculator-box">
+                    <div class="initial_payment">
+                        <label for="">İlkin ödəniş</label>
+                        <select name="" id="" class="nice-select">
+                            <option value="">0%</option>
+                            <option value="">10%</option>
+                            <option value="">15%</option>
+                            <option value="">20%</option>
+                        </select>
+                    </div>
+                    <div class="calculator-months">
+                        <div class="month-item">
+                            <label for="">0%</label>
+                            <div class="month-count">
+                                <input type="radio" name="monthItem">
+                               <p>6 ay</p>
+                            </div>
+                        </div>
+                        <div class="month-item">
+                            <label for="">0%</label>
+                            <div class="month-count">
+                                <input type="radio" name="monthItem">
+                               <p>9 ay</p>
+                            </div>
+                        </div>
+                        <div class="month-item">
+                            <label for="">0%</label>
+                            <div class="month-count">
+                                <input type="radio" name="monthItem">
+                               <p>12 ay</p>
+                            </div>
+                        </div>
+                        <div class="month-item">
+                            <div class="month-count">
+                                <input type="radio" name="monthItem">
+                               <p>15 ay</p>
+                            </div>
+                        </div>
+                        <div class="month-item">
+                            <div class="month-count">
+                                <input type="radio" name="monthItem">
+                               <p>18 ay</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monthly_payment">
+                        <span>Aylıq</span>
+                        <p>7 500 AZN</p>
+                    </div>
+                </div>
+                <div class="calculator-notification">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.00033 9.91669C7.1656 9.91669 7.30424 9.86069 7.41624 9.74869C7.52824 9.63669 7.58405 9.49824 7.58366 9.33335V7.00002C7.58366 6.83474 7.52766 6.6963 7.41566 6.58469C7.30366 6.47308 7.16521 6.41708 7.00033 6.41669C6.83544 6.4163 6.69699 6.4723 6.58499 6.58469C6.47299 6.69708 6.41699 6.83552 6.41699 7.00002V9.33335C6.41699 9.49863 6.47299 9.63727 6.58499 9.74927C6.69699 9.86127 6.83544 9.91708 7.00033 9.91669ZM7.00033 5.25002C7.1656 5.25002 7.30424 5.19402 7.41624 5.08202C7.52824 4.97002 7.58405 4.83158 7.58366 4.66669C7.58327 4.5018 7.52727 4.36335 7.41566 4.25135C7.30405 4.13935 7.1656 4.08335 7.00033 4.08335C6.83505 4.08335 6.6966 4.13935 6.58499 4.25135C6.47338 4.36335 6.41738 4.5018 6.41699 4.66669C6.4166 4.83158 6.4726 4.97021 6.58499 5.0826C6.69738 5.19499 6.83583 5.2508 7.00033 5.25002ZM7.00033 12.8334C6.19338 12.8334 5.43505 12.6801 4.72533 12.3737C4.0156 12.0672 3.39824 11.6517 2.87324 11.1271C2.34824 10.6025 1.93272 9.98513 1.62666 9.27502C1.3206 8.56491 1.16738 7.80658 1.16699 7.00002C1.1666 6.19346 1.31983 5.43513 1.62666 4.72502C1.93349 4.01491 2.34902 3.39755 2.87324 2.87294C3.39747 2.34833 4.01483 1.9328 4.72533 1.62635C5.43583 1.31991 6.19416 1.16669 7.00033 1.16669C7.80649 1.16669 8.56483 1.31991 9.27533 1.62635C9.98583 1.9328 10.6032 2.34833 11.1274 2.87294C11.6516 3.39755 12.0674 4.01491 12.3746 4.72502C12.6818 5.43513 12.8348 6.19346 12.8337 7.00002C12.8325 7.80658 12.6793 8.56491 12.374 9.27502C12.0687 9.98513 11.6532 10.6025 11.1274 11.1271C10.6016 11.6517 9.98427 12.0674 9.27533 12.3743C8.56638 12.6811 7.80805 12.8341 7.00033 12.8334ZM7.00033 11.6667C8.3031 11.6667 9.40658 11.2146 10.3107 10.3104C11.2149 9.40627 11.667 8.3028 11.667 7.00002C11.667 5.69724 11.2149 4.59377 10.3107 3.6896C9.40658 2.78544 8.3031 2.33335 7.00033 2.33335C5.69755 2.33335 4.59408 2.78544 3.68991 3.6896C2.78574 4.59377 2.33366 5.69724 2.33366 7.00002C2.33366 8.3028 2.78574 9.40627 3.68991 10.3104C4.59408 11.2146 5.69755 11.6667 7.00033 11.6667Z" fill="#A6A6A6"/>
+                    </svg>
+                    <p>Sifarişin rəsmiləşdirilməsi zamanı komissiya əlavə oluna bilər</p>                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="model-characteristics-container">
+        <div class="model-characteristics-slide swiper">
+            <div class="swiper-wrapper">
+                <div class="characteristic-box swiper-slide">
+                    <h3 class="box-title" style="color: #AB89D8;">
+                        <img src="./assets/icons/speed.svg" alt="">
+                        Güc və sürət
+                    </h3>
+                    <div class="box-items">
+                        <div class="box-item">
+                            <p>Mühərrik Gücü</p>
+                            <span>210 HP</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Dönmə</p>
+                            <span>345 Nm</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Maksimum Sürət</p>
+                            <span>170 km/s</span>
+                        </div>
+                        <div class="box-item">
+                            <p>0-100 km/s</p>
+                            <span>9 s</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Mühərrik Sayı</p>
+                            <span>1</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Sürücülük sistemi</p>
+                            <span>FWD</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Mühərrik tipi</p>
+                            <span>Sixron motor</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="characteristic-box swiper-slide">
+                    <h3 class="box-title" style="color: #248F59;">
+                        <img src="./assets/icons/accumlate.svg" alt="">
+                        Battery və Charge
+                    </h3>
+                    <div class="box-items">
+                        <div class="box-item">
+                            <p>Batareya</p>
+                            <span>73 kWh</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Alalığı</p>
+                            <span>520 km</span>
+                        </div>
+                        <div class="box-item">
+                            <p>DC Şarj Dərəcəsi</p>
+                            <span>100 kW</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Ac Şarj Dərəcəsi</p>
+                            <span>11 kW</span>
+                        </div>
+                        <div class="box-item">
+                            <p>DC Şarj Müddəti</p>
+                            <span>30 min</span>
+                        </div>
+                        <div class="box-item">
+                            <p>AC Şarj Müddəti</p>
+                            <span>4 saat 30 min</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Şəhər İstehlakı</p>
+                            <span>- kWh / 100 km</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Magistral Yol 
+                                İstehlakı</p>
+                            <span>- kWh / 100 km</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Orta İstehlak</p>
+                            <span>17.3 - kWh / 100 km</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="characteristic-box swiper-slide">
+                    <h3 class="box-title" style="color: #0736B6;">
+                        <img src="./assets/icons/auto-size.svg" alt="">
+                        Avtomobilin ölcüləri
+                    </h3>
+                    <div class="box-items">
+                        <div class="box-item">
+                            <p>Çəki</p>
+                            <span>2700 kg</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Uzunluq</p>
+                            <span>5640 mm</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Genişlik</p>
+                            <span>2108 mm</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Hündürlük</p>
+                            <span>1771 mm</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Baqaj Həcmi</p>
+                            <span>560 litr</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="characteristic-box swiper-slide">
+                    <h3 class="box-title" style="color: #E4712E;">
+                        <img src="./assets/icons/extra_infos.svg" alt="">
+                        Əlavə Xüsusiyyətlər
+                    </h3>
+                    <div class="box-items">
+                        <div class="box-item">
+                            <p>Yanacaq növü</p>
+                            <span>Elektrikli</span>
+                        </div>
+                        <div class="box-item">
+                            <p>İstehsal İli</p>
+                            <span>2025</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Avtonom Sürücülük</p>
+                            <span>-</span>
+                        </div>
+                        <div class="box-item">
+                            <p>İstehsal yeri</p>
+                            <span>Çin</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Təhlükəsizlik</p>
+                            <span>-</span>
+                        </div>
+                        <div class="box-item">
+                            <p>İstilik nasosu</p>
+                            <span>Var</span>
+                        </div>
+                        <div class="box-item">
+                            <p>V2L</p>
+                            <span>Yox</span>
+                        </div>
+                        <div class="box-item">
+                            <p>Müxtəlif</p>
+                            <span>-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other-products">
+        <h2 class="section-title">Oxşar Avtomobillər</h2>
+        <div class="other-products-slide swiper">
+            <div class="swiper-wrapper">
+                <div class="other-product swiper-slide">
+                    <a href="product-detail.html" class="product-card">
+                        <div class="card-head">
+                            <div class="brand-logo-title">
+                                <div class="brand_logo">
+                                    <img src="./assets/images/skoda.svg" alt="">
+                                </div>
+                                <h3 class="brandName">SKODA</h3>
+                            </div>
+                            <h4 class="brand-model">SKODA KAMİQ</h4>
+                        </div>
+                        <div class="card-img">
+                            <img src="./assets/images/card2.png" alt="">
+                            <div class="tag">Kampaniya</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/money.svg" alt="">
+                                <p style="color: #D68251;">24 500 AZN</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/spending.svg" alt="">
+                                <p style="color: #BFD856;">13.3 km/L</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/engine.svg" alt="">
+                                <p style="color: #109DE3;">1.5 L / 305 a.g.</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/horsepower.svg" alt="">
+                                <p style="color: #109DE3;">120 HP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-product swiper-slide">
+                    <a href="product-detail.html" class="product-card">
+                        <div class="card-head">
+                            <div class="brand-logo-title">
+                                <div class="brand_logo">
+                                    <img src="./assets/images/mercedes.svg" alt="">
+                                </div>
+                                <h3 class="brandName">Mercedes</h3>
+                            </div>
+                            <h4 class="brand-model">A-Class Sedan</h4>
+                        </div>
+                        <div class="card-img">
+                            <img src="./assets/images/card3.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/money.svg" alt="">
+                                <p style="color: #D68251;">24 500 AZN</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/spending.svg" alt="">
+                                <p style="color: #BFD856;">13.3 km/L</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/engine.svg" alt="">
+                                <p style="color: #109DE3;">1.5 L / 305 a.g.</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/horsepower.svg" alt="">
+                                <p style="color: #109DE3;">120 HP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-product swiper-slide">
+                    <a href="product-detail.html" class="product-card">
+                        <div class="card-head">
+                            <div class="brand-logo-title">
+                                <div class="brand_logo">
+                                    <img src="./assets/images/avatr.svg" alt="">
+                                </div>
+                                <h3 class="brandName">AVATR</h3>
+                            </div>
+                            <h4 class="brand-model">AVATR 07</h4>
+                        </div>
+                        <div class="card-img">
+                            <img src="./assets/images/card4.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/money.svg" alt="">
+                                <p style="color: #D68251;">24 500 AZN</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/battery.svg" alt="">
+                                <p style="color: #BFD856;">74 kWh</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/speed.svg" alt="">
+                                <p style="color: #AB89D8;">500 km/h</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/horsepower.svg" alt="">
+                                <p style="color: #109DE3;">120 HP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-product swiper-slide">
+                    <a href="product-detail.html" class="product-card">
+                        <div class="card-head">
+                            <div class="brand-logo-title">
+                                <div class="brand_logo">
+                                    <img src="./assets/images/leapmotor.svg" alt="">
+                                </div>
+                                <h3 class="brandName">LEAPMOTOR</h3>
+                            </div>
+                            <h4 class="brand-model">LEAPMOTOR C11</h4>
+                        </div>
+                        <div class="card-img">
+                            <img src="./assets/images/card5.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/money.svg" alt="">
+                                <p style="color: #D68251;">24 500 AZN</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/battery.svg" alt="">
+                                <p style="color: #BFD856;">74 kWh</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/speed.svg" alt="">
+                                <p style="color: #AB89D8;">500 km/h</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/horsepower.svg" alt="">
+                                <p style="color: #109DE3;">120 HP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-product swiper-slide">
+                    <a href="product-detail.html" class="product-card">
+                        <div class="card-head">
+                            <div class="brand-logo-title">
+                                <div class="brand_logo">
+                                    <img src="./assets/images/skoda.svg" alt="">
+                                </div>
+                                <h3 class="brandName">SKODA</h3>
+                            </div>
+                            <h4 class="brand-model">SKODA OKTAVİA</h4>
+                        </div>
+                        <div class="card-img">
+                            <img src="./assets/images/card6.png" alt="">
+                            <div class="tag">Kampaniya</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/money.svg" alt="">
+                                <p style="color: #D68251;">24 500 AZN</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/spending.svg" alt="">
+                                <p style="color: #BFD856;">13.3 km/L</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/engine.svg" alt="">
+                                <p style="color: #109DE3;">1.5 L / 305 a.g.</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/horsepower.svg" alt="">
+                                <p style="color: #109DE3;">120 HP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="other-product swiper-slide">
+                    <a href="product-detail.html" class="product-card">
+                        <div class="card-head">
+                            <div class="brand-logo-title">
+                                <div class="brand_logo">
+                                    <img src="./assets/images/xpeng.svg" alt="">
+                                </div>
+                                <h3 class="brandName">XPENG</h3>
+                            </div>
+                            <h4 class="brand-model">XPENG G9</h4>
+                        </div>
+                        <div class="card-img">
+                            <img src="./assets/images/card7.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/money.svg" alt="">
+                                <p style="color: #D68251;">24 500 AZN</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/battery.svg" alt="">
+                                <p style="color: #BFD856;">74 kWh</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/speed.svg" alt="">
+                                <p style="color: #AB89D8;">500 km/h</p>
+                            </div>
+                            <div class="card-detail-item">
+                                <img src="./assets/icons/horsepower.svg" alt="">
+                                <p style="color: #109DE3;">120 HP</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-buttons">
+                <div class="swiper-button-prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5361 2.58955L6.84454 11.2967C6.76631 11.3715 6.70422 11.4615 6.66212 11.5612C6.62002 11.6609 6.59879 11.7681 6.59974 11.8763C6.59926 11.987 6.62064 12.0966 6.66265 12.199C6.70466 12.3013 6.76647 12.3944 6.84454 12.4727C9.98854 15.5399 13.0185 18.5003 15.9345 21.3539C16.0845 21.4943 16.6845 21.8435 17.1477 21.3251C17.6109 20.8055 17.3301 20.3531 17.1477 20.1659L8.66614 11.8763L16.7625 3.76555C17.0577 3.35835 17.0337 2.98275 16.6905 2.63875C16.3465 2.29475 15.9617 2.27755 15.5361 2.58955Z" fill="white"/>
+                    </svg>                        
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.46386 2.58955L17.1555 11.2967C17.2337 11.3715 17.2958 11.4615 17.3379 11.5612C17.38 11.6609 17.4012 11.7681 17.4003 11.8763C17.4007 11.987 17.3794 12.0966 17.3374 12.199C17.2953 12.3013 17.2335 12.3944 17.1555 12.4727C14.0115 15.5399 10.9815 18.5003 8.06546 21.3539C7.91546 21.4943 7.31546 21.8435 6.85226 21.3251C6.38906 20.8055 6.66986 20.3531 6.85226 20.1659L15.3339 11.8763L7.23746 3.76555C6.94226 3.35835 6.96626 2.98275 7.30946 2.63875C7.65346 2.29475 8.03826 2.27755 8.46386 2.58955Z" fill="white"/>
+                    </svg>                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="discover_auto_container">
+        <div class="discover_auto">
+            <h2><span>Yeni avtomobilər</span> kəşf edin !</h2>
+            <div class="desktop_ban_types">
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/suv.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>SUV</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/hatchback.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>Hatchback</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/sedan.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>Sedan</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/sports.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>Sports</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/mpv.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>MPV</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/pickup.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>Pickup</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/truck.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>Truck</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/station-vagon.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>Station Vagon</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/bus.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>Bus</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="ban_type">
+                    <div class="icon">
+                        <img src="./assets/icons/van.svg" alt="">
+                    </div>
+                    <div class="ban_type_content">
+                        <p>VAN</p>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 8L22 12M22 12L18 16M22 12H2" stroke="#08C46D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+            </div>
+            <div class="ban_types_slide swiper">
+                <div class="swiper-wrapper">
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/suv.svg" alt="">
+                        </div>
+                        <p>SUV</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/hatchback.svg" alt="">
+                        </div>
+                        <p>Hatchback</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/sedan.svg" alt="">
+                        </div>
+                        <p>Sedan</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/sports.svg" alt="">
+                        </div>
+                        <p>Sports</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/mpv.svg" alt="">
+                        </div>
+                        <p>MPV</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/pickup.svg" alt="">
+                        </div>
+                        <p>Pickup</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/truck.svg" alt="">
+                        </div>
+                        <p>Truck</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/station-vagon.svg" alt="">
+                        </div>
+                        <p>Station Vagon</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/bus.svg" alt="">
+                        </div>
+                        <p>Bus</p>
+                    </div>
+                    <div class="ban_type swiper-slide">
+                        <div class="icon">
+                            <img src="./assets/icons/van.svg" alt="">
+                        </div>
+                        <p>VAN</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="reserved">
+                <p>All Rights Reserved © 2024</p>
+                <a href="">166Tech</a>
+            </div>
+            <div class="footer-right">
+                <div class="socials">
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/facebook-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/insta-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/whatsapp-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/linkedin-white.svg" alt="">
+                    </a>
+                    <a href="" class="social-item">
+                        <img src="./assets/icons/twitter-white.svg" alt="">
+                    </a>
+                </div>
+                <a href="" class="footer-phone">
+                    *10101
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="test_drive_modal">
+        <div class="test_drive">
+            <div class="test_drive_head">
+                <a href="index.html" class="test_drive_logo">
+                    <img class="logoDark" src="./assets/images/logo-dark.svg" alt="">
+                    <img class="logoWhite" src="./assets/images/logo-white.svg" alt="">
+                </a>
+                <button class="close_testDrive" type="button">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.5 20L4.5 4M20.5 4L4.5 20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    </svg>                    
+                </button>
+            </div>
+            
+            <h2>Test sürüşü</h2>
+            <div class="short-desc">
+                <p>Zəhmət olmasa, əlaqə formasını doldurun ki, menecerlərimiz sualınızla bağlı sizə kömək edə bilsinlər. Tezliklə sizinlə əlaqə saxlayacağıq. Sorğunuz üçün təşəkkür edirik!</p>
+            </div>
+            <form action="">
+                <div class="form-items">
+                    <div class="form-item">
+                        <label for="">Ad</label>
+                        <input type="text" placeholder="Ad">
+                    </div>
+                    <div class="form-item">
+                        <label for="">Soyad</label>
+                        <input type="text" placeholder="Soyad">
+                    </div>
+                </div>
+                <div class="form-items">
+                    <div class="form-item">
+                        <label for="">Marka</label>
+                        <select name="" id="" class="nice-select">
+                            <option value="">Marka</option>
+                            <option value="">Mercedes</option>
+                            <option value="">Xpeng</option>
+                            <option value="">Changan</option>
+                            <option value="">Avatr</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="">Model</label>
+                        <select name="" id="" class="nice-select">
+                            <option value="">Model</option>
+                            <option value="">C300</option>
+                            <option value="">Nevo A05</option>
+                            <option value="">Cs 35</option>
+                            <option value="">G 500</option>
+                            <option value="">Avatr</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="">Əlaqə nömrəsi</label>
+                    <input type="text" placeholder="Əlaqə nömrəsi">
+                </div>
+                <button class="submitTestDrive" type="submit">Göndər</button>
+            </form>
+        </div>
+    </div>
+    <div class="mobile_menu_container">
+        <div class="mobile_menu">
+            <div class="mobile_menu_head">
+                <a href="index.html" class="mobile_menu_logo">
+                    <img class="logoDark" src="./assets/images/logo-dark.svg" alt="">
+                    <img class="logoWhite" src="./assets/images/logo-white.svg" alt="">
+                </a>
+                <button class="close_mobile_menu" type="button">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.5 20L4.5 4M20.5 4L4.5 20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                    </svg>                    
+                </button>
+            </div> 
+            <form class="mobile-search">
+                <button class="searchBtn" type="submit">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16675 17.4167C11.3548 17.4167 13.4532 16.5475 15.0004 15.0003C16.5476 13.4531 17.4167 11.3547 17.4167 9.16667C17.4167 6.97863 16.5476 4.88021 15.0004 3.33303C13.4532 1.78586 11.3548 0.916664 9.16675 0.916664C6.97871 0.916664 4.88029 1.78586 3.33312 3.33303C1.78594 4.88021 0.916748 6.97863 0.916748 9.16667C0.916748 11.3547 1.78594 13.4531 3.33312 15.0003C4.88029 16.5475 6.97871 17.4167 9.16675 17.4167ZM9.16675 15.4752C8.3383 15.4752 7.51797 15.312 6.75259 14.995C5.98721 14.6779 5.29176 14.2132 4.70596 13.6274C4.12017 13.0416 3.65549 12.3462 3.33845 11.5808C3.02142 10.8154 2.85825 9.99511 2.85825 9.16667C2.85825 8.33822 3.02142 7.51789 3.33845 6.75251C3.65549 5.98712 4.12017 5.29168 4.70596 4.70588C5.29176 4.12008 5.98721 3.6554 6.75259 3.33837C7.51797 3.02134 8.3383 2.85816 9.16675 2.85816C10.8399 2.85816 12.4445 3.52281 13.6275 4.70588C14.8106 5.88895 15.4752 7.49355 15.4752 9.16667C15.4752 10.8398 14.8106 12.4444 13.6275 13.6274C12.4445 14.8105 10.8399 15.4752 9.16675 15.4752ZM14.5714 17.4167L16.7952 21.0833H18.9402L16.7155 17.4167H14.5714Z" fill="#1E1E1E"/>
+                        </svg>
+                        
+                </button>
+                <input type="text" placeholder="AVATR,XPENG,SKODA....">
+            </form>
+            <div class="mobile_menu_bottom">
+                <div class="lang">
+                    <button class="current-lang" type="button">
+                        <span>AZ</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10H7Z" fill="#414141"/>
+                        </svg>
+                    </button>
+                    <div class="other-langs">
+                        <a href="" class="lang-item">EN</a>
+                        <a href="" class="lang-item">RU</a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <button class="themeModeBtn" type="button">
+                    <img src="./assets/icons/moon.svg" alt="" class="moon">
+                    <img src="./assets/icons/moon-white.svg" alt="" class="moon-white">
+                    <img src="./assets/icons/sun.svg" alt="" class="sun">
+                </button>
+                <div class="line"></div>
+                <a href="" class="mobile-phone">*10101</a>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.js"></script>
+    <script src="./assets/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/select2/select.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select.nice-select').niceSelect();
+            $('select.select2').select2();
+        });
+    </script>
+    <script src="./assets/swiper/swiper.js"></script>
+   <script src="./assets/index.js"></script>
+</body>
+</html>
