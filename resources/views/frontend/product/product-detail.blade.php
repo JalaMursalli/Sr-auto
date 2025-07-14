@@ -28,6 +28,8 @@
         <img src="{{asset($brend?->image)}}" alt="">
     </div>
     <h1 class="brand_name">{{$productDetail?->name}}</h1>
+
+
     <h2 class="model_name">{{$productDetail?->model?->name}}</h2>
     <button class="shareBtn" type="button">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,14 +52,19 @@
     </div>
 </div>
 <div class="product-detail-main">
+
     <div class="product-images">
         <div class="product-gallery-slide swiper">
             <div class="swiper-wrapper">
+
                     @foreach ($productDetail->productImages as $gallery )
                     <div class="gallery-item swiper-slide">
                             <img src="{{asset($gallery->image)}}" alt="">
                     </div>
                     @endforeach
+
+
+
             </div>
             <div class="swiper-buttons">
                 <div class="swiper-button-prev">
@@ -76,6 +83,7 @@
         <p class="campaign-tag">{{__('frontend.activeSaleStatus')}}</p>
         @endif
     </div>
+
     <div class="product-detail-right">
         <div class="product-detail">
             <div class="detail-tags">
@@ -146,7 +154,10 @@
         </svg>
     </a>
     @endif
-
+    <div class="model-description">
+        <p>{!! $productDetail->description !!}</p>
+    </div>
 </div>
 @include('frontend.product.other-products')
+
 @endsection

@@ -50,6 +50,8 @@
             <button class="submitContact" type="submit">{{$settings['send']}}</button>
         </form>
     </div>
+
+
     <script>
         $(function(){
 

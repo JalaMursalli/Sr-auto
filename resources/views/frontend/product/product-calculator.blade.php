@@ -58,7 +58,10 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+
+
     $(function(){
+
         $('#installmentCalculator').on('change', 'select, input', function () {
 
         let initialPayment = $('#initial_payment').val();
@@ -79,10 +82,17 @@
             }
         });
         });
+
+
+
         const $firstCheckbox = $('.month-item:first-child input[name="month"]');
         $firstCheckbox.prop('checked', true).trigger('change');
 
     })
+
+
+
+
 </script>
 
 

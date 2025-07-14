@@ -44,6 +44,8 @@
                 </p>
                 <span class="filterCount">0</span>
             </button>
+
+
             <select name="" id="" class="nice-select">
                 <option value="">{{ $settings['model'] }}</option>
                 @foreach ($models as $model)
@@ -102,6 +104,7 @@
                     </div>
                 </div>
                 @include('frontend.brend.brend-filter')
+
             </div>
             <div class="brands">
                 <div class="all-brands">

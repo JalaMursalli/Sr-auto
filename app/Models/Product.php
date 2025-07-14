@@ -59,6 +59,9 @@ class Product extends Model
         'guarantee_az',
         'guarantee_en',
         'guarantee_ru',
+        'description_az',
+        'description_en',
+        'description_ru',
     ];
     public function getNameAttribute(){
         return $this->getAttribute('name_'.app()->getLocale());
@@ -71,6 +74,9 @@ class Product extends Model
     }
     public function getMetaDescriptionAttribute(){
         return $this->getAttribute('meta_description_'.app()->getLocale());
+    }
+     public function getDescriptionAttribute(){
+        return $this->getAttribute('description_'.app()->getLocale());
     }
      public function getGuaranteeAttribute(){
         return $this->getAttribute('guarantee_'.app()->getLocale());

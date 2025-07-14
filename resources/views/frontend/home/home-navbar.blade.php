@@ -30,10 +30,14 @@
                         <img src="{{ asset('frontend/assets/images/phone-white.svg') }}" alt="">
                         <p>{{ $settings['contact.us'] }}</p>
                     </a>
+
+
+
                     @php
                         $currentLang = app()->getLocale();
                         $langs = ['az', 'en', 'ru'];
                     @endphp
+
                     <div class="lang">
                         <button class="current-lang" type="button">
                             <span>{{ strtoupper($currentLang) }}</span>
@@ -50,6 +54,10 @@
                             @endforeach
                         </div>
                     </div>
+
+
+
+
                     {{-- @php
                         $currentLang = app()->getLocale();
                         $langs = ['az', 'en', 'ru'];
@@ -73,6 +81,11 @@
                             @endforeach
                         </div>
                     </div> --}}
+
+
+
+
+
                     <button class="themeModeBtn" type="button">
                         <img src="{{ asset('frontend/assets/icons/moon.svg') }}" alt="" class="moon">
                         <img src="{{ asset('frontend/assets/icons/moon-white.svg') }}" alt=""

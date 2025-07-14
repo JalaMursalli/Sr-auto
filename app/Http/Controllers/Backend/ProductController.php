@@ -87,6 +87,9 @@ class ProductController extends Controller
             'meta_description_az' => ['nullable'],
             'meta_description_en' => ['nullable'],
             'meta_description_ru' => ['nullable'],
+            'description_az' => ['nullable'],
+            'description_en' => ['nullable'],
+            'description_ru' => ['nullable'],
             'alt_image_az' => ['nullable', 'max:200'],
             'alt_image_en' => ['nullable', 'max:200'],
             'alt_image_ru' => ['nullable', 'max:200'],
@@ -119,6 +122,9 @@ class ProductController extends Controller
         $product->meta_description_az = $request->meta_description_az;
         $product->meta_description_en = $request->meta_description_en;
         $product->meta_description_ru = $request->meta_description_ru;
+        $product->description_az = $request->description_az;
+        $product->description_en = $request->description_en;
+        $product->description_ru = $request->description_ru;
         $product->alt_image_az = $request->alt_image_az;
         $product->alt_image_en = $request->alt_image_en;
         $product->alt_image_ru = $request->alt_image_ru;
@@ -255,6 +261,9 @@ class ProductController extends Controller
             'meta_description_az' => ['nullable'],
             'meta_description_en' => ['nullable'],
             'meta_description_ru' => ['nullable'],
+            'description_az' => ['nullable'],
+            'description_en' => ['nullable'],
+            'description_ru' => ['nullable'],
             'alt_image_az' => ['nullable', 'max:200'],
             'alt_image_en' => ['nullable', 'max:200'],
             'alt_image_ru' => ['nullable', 'max:200'],
@@ -285,6 +294,9 @@ class ProductController extends Controller
         $product->meta_description_az = $request->meta_description_az;
         $product->meta_description_en = $request->meta_description_en;
         $product->meta_description_ru = $request->meta_description_ru;
+        $product->description_az = $request->description_az;
+        $product->description_en = $request->description_en;
+        $product->description_ru = $request->description_ru;
         $product->alt_image_az = $request->alt_image_az;
         $product->alt_image_en = $request->alt_image_en;
         $product->alt_image_ru = $request->alt_image_ru;

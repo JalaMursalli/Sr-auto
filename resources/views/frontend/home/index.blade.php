@@ -63,6 +63,9 @@
                         <img src="{{ asset('frontend/assets/images/phone-white.svg') }}" alt="">
                         <p>{{ $settings['contact.us'] }}</p>
                     </a>
+
+
+
                     @php
                         $currentLang = app()->getLocale();
                         $langs = ['az', 'en', 'ru'];
@@ -84,6 +87,10 @@
                             @endforeach
                         </div>
                     </div>
+
+
+
+
                     {{-- @php
                         $currentLang = app()->getLocale();
                         $langs = ['az', 'en', 'ru'];
@@ -107,6 +114,11 @@
                             @endforeach
                         </div>
                     </div> --}}
+
+
+
+
+
                     <button class="themeModeBtn" type="button">
                         <img src="{{ asset('frontend/assets/icons/moon.svg') }}" alt="" class="moon">
                         <img src="{{ asset('frontend/assets/icons/moon-white.svg') }}" alt=""
@@ -154,6 +166,8 @@
                             @foreach ($fuels as $fuel)
                                 <option value="{{ $fuel->id }}">{{ $fuel->name_az }}</option>
                             @endforeach
+
+
                         </select>
                     </div>
                     <div class="line"></div>
@@ -190,6 +204,8 @@
                         <p>{{ $brend->name }}</p>
                     </a>
                 @endforeach
+
+
             </div>
         </div>
         @include('frontend.layouts.footer')

@@ -50,6 +50,10 @@
     </script>
     <script src="{{ asset('frontend/assets/swiper/swiper.js') }}"></script>
     <script src="{{ asset('frontend/assets/index.js') }}"></script>
+
+
+
+
      <script>
         $(function(){
 
@@ -83,6 +87,9 @@
                                  $("#testDrive").find("[name='"+a+"']").after("<p class='errorAlert' style='color:red;'>"+errors[a][b]+"</p>")
                             }
                         }
+
+
+
                     }
                 })
             })

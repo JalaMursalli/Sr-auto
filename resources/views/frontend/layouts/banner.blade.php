@@ -10,6 +10,8 @@
                 <p>{{$banner->title}}</p>
             </div>
             @endforeach
+
+
         </div>
         <div class="ban_types_slide swiper">
             <div class="swiper-wrapper">

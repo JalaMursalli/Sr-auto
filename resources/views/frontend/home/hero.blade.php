@@ -28,6 +28,8 @@
                      @foreach ($fuels as $fuel)
                          <option value="{{ $fuel->id }}">{{ $fuel->name_az }}</option>
                      @endforeach
+
+
                  </select>
              </div>
              <div class="line"></div>
@@ -63,5 +65,7 @@
                  <p>{{ $brend->name_az }}</p>
              </a>
          @endforeach
+
+
      </div>
  </div>

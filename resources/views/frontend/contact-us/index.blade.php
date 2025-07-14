@@ -1,4 +1,5 @@
 @extends('frontend.layouts.layout')
+
 @section('language')
     <div class="lang">
         <button class="current-lang" type="button">
@@ -21,6 +22,7 @@
         </div>
     </div>
 @endsection
+
 @section('content')
 <div class="contact-container">
     <div class="breadcrump-container">
@@ -135,7 +137,9 @@
             </div>
         </div>
         @endforeach
+
     </div>
     @include('frontend.contact-us.suggest-complains')
 </div>
+
 @endsection

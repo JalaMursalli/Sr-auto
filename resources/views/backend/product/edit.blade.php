@@ -114,7 +114,19 @@
                                                 @enderror
                                             </div>
                                         </div>
-
+                                            <div class="col-md-12">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Description
+                                                (Az)
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <textarea name="description_az" id="description_az" class="summernote">{!! $product->description_az !!}</textarea>
+                                                @error('description_az')
+                                                    <div class="invalid-feedback" style="display: block">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
+                                            </div>
+                                        </div>
                                         <div class="col-md-12">
                                             <label for="example-text-input" class="col-sm-2 col-form-label">Güc və sürət
                                                 (Az)
@@ -245,7 +257,19 @@
                                                 @enderror
                                             </div>
                                         </div>
-
+                                            <div class="col-md-12">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Description
+                                                (En)
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <textarea name="description_en" id="description_en" class="summernote">{!! $product->description_en !!}</textarea>
+                                                @error('description_en')
+                                                    <div class="invalid-feedback" style="display: block">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
+                                            </div>
+                                        </div>
                                         <div class="col-md-12">
                                             <label for="example-text-input" class="col-sm-2 col-form-label">Güc və sürət
                                                 (En)
@@ -376,6 +400,19 @@
                                                         <div class="invalid-feedback d-block">{{ $message }}</div>
                                                     @enderror
                                                 </div>
+                                            </div>
+                                        </div>
+                                            <div class="col-md-12">
+                                            <label for="example-text-input" class="col-sm-2 col-form-label">Description
+                                                (Ru)
+                                            </label>
+                                            <div class="col-sm-12">
+                                                <textarea name="description_ru" id="description_ru" class="summernote">{!! $product->description_ru !!}</textarea>
+                                                @error('description_ru')
+                                                    <div class="invalid-feedback" style="display: block">
+                                                        {{ $message }}
+                                                    </div>
+                                                @enderror
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -870,14 +907,17 @@
 @push('js')
     <script src="https://cdn.ckeditor.com/4.22.1/full/ckeditor.js"></script>
     <script>
+        CKEDITOR.replace('description_az');
         CKEDITOR.replace('power_and_speed_az');
         CKEDITOR.replace('battery_and_charge_az');
         CKEDITOR.replace('size_az');
         CKEDITOR.replace('features_az');
+        CKEDITOR.replace('description_en');
         CKEDITOR.replace('power_and_speed_en');
         CKEDITOR.replace('battery_and_charge_en');
         CKEDITOR.replace('size_en');
         CKEDITOR.replace('features_en');
+        CKEDITOR.replace('description_ru');
         CKEDITOR.replace('power_and_speed_ru');
         CKEDITOR.replace('battery_and_charge_ru');
         CKEDITOR.replace('size_ru');
